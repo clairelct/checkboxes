@@ -105,15 +105,6 @@ function App() {
             <FormGroup column>
               {simpleCheckboxes.map((checkbox, index) => {
                 return (
-                  // <SimpleCheckbox
-                  //   key={index}
-                  //   name={checkbox.name}
-                  //   checked={checkbox.isChecked}
-                  //   onChange={() => {
-                  //     handleOnChange(index);
-                  //   }}
-                  //   inputProps={{ "aria-label": "primary checkbox" }}
-                  // />
                   <FormControlLabel
                     control={
                       <SimpleCheckbox
