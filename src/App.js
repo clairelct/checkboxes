@@ -5,7 +5,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { withStyles } from "@material-ui/core/styles";
 
-// Style
+// Customize Material-UI Checkbox component
 const MasterCheckbox = withStyles({
   root: {
     color: "#028D8D",
@@ -68,7 +68,7 @@ function App() {
       [...simpleCheckboxes],
       (simpleCheckboxes[index].isChecked = !simpleCheckboxes[index].isChecked)
     );
-    // Verifies (each time) all checkboxes 'isChecked' value
+    // Loop on checkbox's array, checking on 'isChecked' value
     // Looking for no 'false' value to update master checkbox's state
     const notAllChecked = simpleCheckboxes.some(
       (elem) => elem.isChecked === false
